@@ -20,12 +20,8 @@ class TreeNode:
 
         Returns the number of children of N that are not None.
         '''
-        num = 0
-        for child in [self.left, self.right]:
-            if child:
-                num += 1
-        return num
-    
+        return = sum([1 for child in [self.left, self.right] if child])
+
 class TreapNode(TreeNode):
     '''A node in a treap.'''
     def __init__(self, data, priority):
