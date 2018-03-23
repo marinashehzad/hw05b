@@ -45,7 +45,7 @@ class AvlNode(TreeNode):
 # the class to achieve functionality.
 
 class Bst:
-    '''A BST that does not contain duplicates.'''
+    '''A BST. Does not contain duplicates. Nodes are of type TreeNode.'''
     def __init__(self):
         self.root = None
         self.size = 0
@@ -75,7 +75,7 @@ class Bst:
         self.__init__()
         
 class Treap(Bst):
-    '''A treap that does not contain duplicate values.'''
+    '''A treap. Does not contain duplicates. Nodes are of type TreapNode.'''
     max_priority = 1 << 10
     def __init__(self):
         super().__init__()
@@ -98,7 +98,7 @@ class Treap(Bst):
         return removed
 
 class AvlTree(Bst):
-    '''An AVL tree that does not contain duplicate values.'''
+    '''An AVL tree. Does not contain duplicates. Nodes are of type AvlNode.'''
     def __init__(self):
         super().__init__()
         
