@@ -1,4 +1,4 @@
-from BST import *
+from trees import *
 
 lst_add = [34, 82, 26, 60, 11, 18, 82, 55, 48, 76, 94, 55]
 lst_rem = [0, 48, 12, 48, 50, 11]
